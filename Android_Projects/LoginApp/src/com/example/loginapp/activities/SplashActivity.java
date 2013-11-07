@@ -54,7 +54,7 @@ public class SplashActivity extends Activity {
 	
 	private void redirectToLogin() {
 		mSplashProgressBar.setVisibility(ProgressBar.GONE);
-		Intent loginIntent = new Intent(this, LoginActivity.class);
+		Intent loginIntent = new Intent(this, UserRegistrationActivity.class);
 		startActivity(loginIntent);
 		finish();
 	}

@@ -11,5 +11,25 @@
     <string name="username_hint">Username should not be blank</string>
     <string name="password_hint">Password should not be blank</string>
     <string name="remember_me">Remember Me !</string>
+    
+    <!-- User registration page -->
+    <string name="label_register_header">Register</string>
+    <string name="label_name">Name*</string>
+    <string name="hint_name">Name</string>
+    <string name="label_email">Email*</string>
+    <string name="hint_email">Email</string>
+    <string name="label_pass">Password*</string>
+    <string name="hint_pass">Password</string>
+    <string name="label_male">Male</string>
+    <string name="label_female">Female</string>
+    <string name="label_confirm_pass">Confirm password*</string>
+    <string name="hint_confirm_pass">Confirm password</string>
+    <string name="label_address">Address*</string>
+    <string name="hint_address">Address</string>
+    <string name="label_city">City*</string>
+    <string name="hint_city">City</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_skip">Skip</string>
+    <string name="label_terms_and_conditions">I accept the terms and conditions</string>
 
 </resources>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_user_regsitration" >
+
+    <TextView
+        android:id="@+id/register_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/label_register_header"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/scrollViewRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons"
+        android:layout_below="@id/register_heading">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <TextView
+                android:id="@+id/labelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"               
+                android:layout_marginTop="20dip"
+                android:text="@string/label_name"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelName"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_name"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="20dip"
+                android:text="@string/label_email" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelEmail"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/labelPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_marginTop="20dip"
+                android:text="@string/label_pass" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelPassword"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_pass"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/labelConfrmPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pass"
+                android:layout_marginTop="20dip"
+                android:text="@string/label_confirm_pass" />
+
+            <EditText
+                android:id="@+id/confirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelConfrmPass"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_confirm_pass"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/labelAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirmPass"
+                android:layout_marginTop="20dip"
+                android:text="@string/label_address" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelAddress"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_address"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/labelCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_marginTop="20dip"
+                android:text="@string/label_city" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelCity"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/hint_city"
+                android:inputType="text|textPostalAddress" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_male" />
+
+                <RadioButton
+                    android:id="@+id/skip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_female" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/termsAndConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender"
+                android:text="@string/label_terms_and_conditions" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_margin="5dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/btn_register"
+            android:onClick="onRegister" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="@string/btn_skip" />
+    </LinearLayout>
+
+</RelativeLayout>
